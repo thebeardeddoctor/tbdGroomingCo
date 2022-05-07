@@ -11,16 +11,18 @@ body {
  display: flex;
  justify-content: space-between;
  align-items:center;
- background-color: rgba(51, 51, 51, .75);
+ background-color: rgba(0, 0, 0, .75);
  color: whitesmoke;
  position:fixed;
  width: 100%;
 
 }
-
+/* link to the home page using the title  */
 .brand-title a {
+ /* changes font size */
  font-size: 2rem;
  margin:.5rem;
+ /* eliminates hyperlink purple underlined styling from logo  */
  text-decoration: none;
  color: whitesmoke;
 }
@@ -32,19 +34,22 @@ body {
 }
 
 .navbar-links li {
+ /* eliminates bullet points in unordored list  */
  list-style: none;
 }
 
 .navbar-links li a {
+ /* eliminates hyperlink purple underlined styling from navbar links */
  text-decoration: none;
  color: whitesmoke;
  padding: 1rem;
  display: block;
  font-size: 1.5rem;
 }
-
+/* when hovering over links, the container the links are housed in will change color */
 .navbar-links li:hover {
- background-color: #555;
+ background-color: seagreen;
+ /* smooth out the transition of the hover  */
  transition-delay: .3s;
  transition-timing-function: ease-in;
 }
@@ -65,8 +70,8 @@ body {
  width: 100%;
  background-color: whitesmoke;
  border-radius: 10px;
-
 }
+/* when the screen width decreases to 800 px, these styling properties will go into effect */
 @media(max-width: 800px) {
 
  .brand-title a {
@@ -107,8 +112,10 @@ body {
  display: flex;
 }
 }
-.content {
- height: 200vh;
+
+
+.hero-section {
+ height: 300vh;
  background-image: url(/images/whiskey1.jpeg);
  background-color: #333;
  background-blend-mode: multiply;
@@ -116,5 +123,41 @@ body {
  background-repeat: no-repeat;
  display: grid;
  place-items: center;
- z-index: 999;
+ z-index: 998;
+ display:flex;
+ flex-direction: column;
 }
+
+/* hero text and shop now button */
+
+
+.hero-section  {
+ display: flex;
+ flex-direction: column;
+ color: black; 
+ color: whitesmoke;
+ align-items: center;
+ text-decoration: none;
+padding-top: 25vh;}
+
+
+.herotext {
+ font-size: 3em;
+text-align: center;
+}
+.hero-para {
+ font-size: 2em;
+ margin-top: -10px;
+
+}
+#shop {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  display:block;
+  background-image: url(shop.png);
+background-color: none;
+padding: 10px 55px 10px 55px;
+  background-position: -60px -200px;
+  border: 0px;
+  }
